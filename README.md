@@ -13,5 +13,5 @@
 - 自然语言处理
 
 - 创建一个Chrome扩展
-- 后台开发 - REST, Flask
-- 前端开发--HTML、CSS
+- 后台开发 - Flask
+- 前端开发 - React
