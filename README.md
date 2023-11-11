@@ -11,6 +11,7 @@
 ## **所需技能**
 
 - 自然语言处理
+	- https://github.com/topics/nlp
 
 - 创建一个Chrome扩展
 - 后台开发 - Flask
