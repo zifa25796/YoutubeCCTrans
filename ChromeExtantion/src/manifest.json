@@ -1,0 +1,14 @@
+{
+    "name": "YoutubeCCTrans",
+    "description": "Basic",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "permissions": [
+            "contextMenus", "storage"
+        ]
+    }
+}
