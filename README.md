@@ -14,4 +14,4 @@
 
 - 创建一个Chrome扩展
 - 后台开发 - Flask
-- 前端开发 - React
+- 前端开发 - React, TypeScript
