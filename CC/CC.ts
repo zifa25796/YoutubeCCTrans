@@ -1,11 +1,18 @@
-function getVedioID(str: string = ''): string {
+function getVedioID(str = '') {
 
-    var videoURL: string = str //"https://www.youtube.com/watch?v=IZ1GYnI9a5E&ab_channel=ShareAcademy";
-    var regex = /(youtu.*be.*)\/(watch\?v=|embed\/|v|shorts|)(.*?((?=[&#?])|$))/gm;
+    const params = str.split('?')[1]!
 
-    if(regex.exec(videoURL) != null) {
-        return regex.exec(videoURL)![3];
-    } else {
-        return ""
+    const paramPairs = params.split('&')
+
+    if (paramPairs) {
+      let ret
+      paramPairs.forEach(param => {
+        let temp = param.split("=")
+        if (temp[0] === "v") {
+          console.log(temp[1])
+          ret = temp[1]
+        }
+      })
+      return ret
     }
-}
+  }
