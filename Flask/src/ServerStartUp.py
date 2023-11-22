@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+from CCAPI import *
 
 app = Flask(__name__)
 CORS(app, resources={r'/*': {'origins': '*'}})
@@ -13,7 +14,7 @@ def post_data():
     data = request.get_json()
     print(data)
 
-    response = jsonify({'status': 200, 'data': data})
+    response = jsonify({'status': 200, 'data': getSingleVedilCCList(data['id'])})
 
     return response
 
