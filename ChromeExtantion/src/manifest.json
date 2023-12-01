@@ -9,6 +9,7 @@
     "background": {
         "permissions": [
             "contextMenus", "storage"
-        ]
+        ],
+        "service_worker": "background.js"
     }
 }
