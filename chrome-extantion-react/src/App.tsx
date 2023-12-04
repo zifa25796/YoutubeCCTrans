@@ -4,6 +4,8 @@ import './App.css';
 
 const App = () => {
   const [vid, setVid] = useState("")
+  const [videoElement, setVideoElement] = useState(document.querySelector("video"))
+
 
   function getVedioID(str = "") {
     const params = str.split("?")[1]!
@@ -20,8 +22,21 @@ const App = () => {
     }
   }
 
+  function handleTimeUpdate(currentTime: number) {
+    console.log('当前播放时间：', currentTime);
+
+    return currentTime
+  }
+
+  function getVedioTime() {
+    if (videoElement) {
+      console.log(videoElement.currentTime)
+    }
+  }
+
   const tryPost = () => {
     getVedioID("https://www.youtube.com/watch?v=Oz4XfhktPBI")
+    getVedioTime()
     fetch('http://127.0.0.1:5000/test', {
       method: "post",
       headers: {

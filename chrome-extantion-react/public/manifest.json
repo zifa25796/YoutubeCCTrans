@@ -13,6 +13,17 @@
     ],
     "optional_permissions": [
       "http://*/"
+    ],
+    "service_worker": "background.js",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.youtube.com/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
     ]
   }
 }
