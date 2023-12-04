@@ -10,6 +10,9 @@
     "permissions": [
       "contextMenus",
       "storage"
+    ],
+    "optional_permissions": [
+      "http://*/"
     ]
   }
 }

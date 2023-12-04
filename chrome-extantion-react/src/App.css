@@ -36,3 +36,171 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 400px;
+  width: 300px;
+}
+
+#header {
+  width: 100%;
+  height: 40px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+#header div {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  margin-right: 10px;
+}
+
+#navBar{
+  width: 100%;
+  height: 45px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar>div {
+  width: 95%;
+  height: 70%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar>div>div{
+  width: 95%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navBar>div>div>div {
+  width: 28%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#progressBar{
+  width: 100%;
+  height: 100px;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressBar>div {
+
+  width: 95%;
+  height: 85%;
+  background-color: brown;
+}
+
+.timeinterval {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.timeinterval div {
+  width: 45%;
+}
+
+.timeinterval input {
+  width: 90%;
+  border: none;
+  outline-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30%;
+  margin-top: 5px;
+}
+
+#translatePanel {
+
+  background-color: pink;
+  width: 100%;
+  height: 190px;
+
+}
+
+.lan-transfer {
+
+  width: 100%;
+  height: 12%;
+  background-color: yellowgreen;
+  display: flex;
+
+}
+
+.lan-transfer select{
+  width: 50%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.trans-detail {
+
+  width: 100%;
+  height: 88%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.trans-detail div {
+  height: 50%;
+  background-color: purple;
+
+}
+
+.trans-detail div:first-child{
+  border-bottom: 1px solid black;
+}
+
+#export {
+  width: 100%;
+  height: 25px;
+  background-color: gray;
+  display: flex;
+}
+
+#export input,
+#export button {
+  width: 50%;
+}
+
+#export input{
+  text-align: center;
+  outline-style: none;
+}
