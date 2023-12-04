@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			body {
-				height: 360px;
-				width: 240px;
-				text-align: center;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css"/>
 	</head>
-	<body id="bodyContent">
-        <button type="button">Click Me!</button>
-        <script type="text/javascript">
-            const Http = new XMLHttpRequest();
-            const url = "http://127.0.0.1:5000";
-            Http.open("GET", url);
-            Http.send();
+	<body>
 
-            Http.onreadystatechange = (e) => {
-                console.log(Http.responseText)
-            }
-        </script>
+		<div id="header">
+			<h1>YoutubeCCTrans</h1>
+			<div></div>
+		</div>
+
+		<div id="navBar">
+			<div>
+				<div>
+					<div>CC Grab</div>
+					<div>Summary</div>
+					<div>Other</div>
+				</div>
+			</div>	
+		</div>
+
+		<div id="progressBar">
+			<div>
+				<h2>Grab CC</h2>
+				<div class="timeinterval">
+					<div>
+						<p>Strat Time</p>
+						<input type="text"/>
+					</div>
+					<div>
+						<p>End Time</p>
+						<input type="text"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="translatePanel">
+			<div class="lan-transfer">
+				<select>
+					<option>Current Language</option>
+				</select>
+				<select>
+					<option>Translate Language</option>
+				</select>
+			</div>
+			<div class="trans-detail">
+				<div></div>
+				<div></div>
+			</div>
+
+		</div>
+		<div id="export">
+			<input type="text" value="file name"/>
+			<button>Export</button>
+		</div>
+
+
+        <!-- <button id="test">click me</button> -->
+		<script type="text/javascript" src="popup.js"></script>
 	</body>
 </html>
