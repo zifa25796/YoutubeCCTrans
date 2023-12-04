@@ -24,6 +24,23 @@ const Extract = () => {
       return ret
     }
   }
+  function handleTimeUpdate(currentTime: number) {
+    console.log('当前播放时间：', currentTime);
+
+    return currentTime
+  }
+  function getVedioTime(str = '') {
+
+    let videoTime = str
+    ? document.getElementById(str) as HTMLVideoElement | null: null;
+
+    if (videoTime) {
+      videoTime.addEventListener('timeupdate', function() {
+          const currentTime = videoTime!.currentTime;
+          handleTimeUpdate(currentTime);
+      });
+    }
+  }
 
   const tryPost = () => {
 

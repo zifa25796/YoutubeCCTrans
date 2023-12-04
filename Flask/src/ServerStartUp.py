@@ -14,7 +14,7 @@ def post_data():
     data = request.get_json()
     print(data)
 
-    response = jsonify({'status': 200, 'data': getSingleVedilCCList(data['id'])})
+    response = jsonify({'status': 200, 'data': getSingleVediolCCList(data['id'])})
 
     return response
 

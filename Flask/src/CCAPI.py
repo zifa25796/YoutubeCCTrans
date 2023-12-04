@@ -10,7 +10,7 @@ from youtube_transcript_api.formatters import WebVTTFormatter
 from youtube_transcript_api.formatters import SRTFormatter
 
 
-def getSingleVedilCCList(video_id, languages=['en']):  # 语言默认英语，直接输入id即可。如果需要别的语言，更改languages参数即可
+def getSingleVediolCCList(video_id, languages=['en']):  # 语言默认英语，直接输入id即可。如果需要别的语言，更改languages参数即可
     return YouTubeTranscriptApi.get_transcript(video_id, languages)
     # 输出格式为
     # [
@@ -28,8 +28,7 @@ def getSingleVedilCCList(video_id, languages=['en']):  # 语言默认英语，�
     # ]
 
 
-def getMultiVediosCCList(video_id, languages=[
-    'en']):  # 如果想要获取多个视频的字幕列表，可以将video_id设置为["video_id1", "video_id2"]。语言默认英语，直接输入id即可。如果需要别的语言，更改languages参数即可
+def getMultiVediosCCList(video_id, languages=['en']):  # 如果想要获取多个视频的字幕列表，可以将video_id设置为["video_id1", "video_id2"]。语言默认英语，直接输入id即可。如果需要别的语言，更改languages参数即可
     return YouTubeTranscriptApi.get_transcripts(video_id, languages)
 
 
